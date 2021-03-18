@@ -1,4 +1,6 @@
 
+### SMMUv3总体框图
+![SMMUv3](./smmuv3.png)
 
 ```
 /* An SMMUv3 instance */
@@ -117,5 +119,8 @@ ContextDescriptor格式：
 #### stage 2
 STE->S2TTB
 
-完整过程如下:
+#### 找到TTB以后的翻译过程类似下图
+![singleTranslation](./s1.png)
+
+#### 完整过程如下:
 ![Configuration and Translation lookup](./ConfTran.png)
